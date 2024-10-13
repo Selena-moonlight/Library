@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FCECFD;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ucenfotec.ac.cr.quiros.selena.libraryfrontend.LogInController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="37.0" prefHeight="18.0" prefWidth="115.0" text="Library" textAlignment="CENTER" textFill="#48294b" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="113.0" prefHeight="26.0" prefWidth="80.0" text="Usuario" textFill="#43004a">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="182.0" text="Contraseña" textFill="#43004a">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextView" layoutX="323.0" layoutY="250.0" mnemonicParsing="false" onAction="#onContinue" onMouseClicked="#onContinueCliked" style="-fx-background-color: #FCECFD; -fx-border-color: #48294b; -fx-border-radius: 5;" text="Continuar" textFill="#48294b">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Button>
+      <Button fx:id="forgotPass" layoutX="155.0" layoutY="250.0" mnemonicParsing="false" onAction="#onForgotPass" onMouseClicked="#onForgotPassClick" style="-fx-background-color: #FCECFD;" text="Olvidé mi contraseña" textFill="#48294b">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Button>
+      <Button fx:id="register" layoutX="260.0" layoutY="298.0" mnemonicParsing="false" onAction="#onRegister" onMouseClicked="#onRigisterClicked" style="-fx-background-color: #FCECFD;" text="Registrarme" textFill="#48294b">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font></Button>
+      <PasswordField fx:id="Pass" layoutX="235.0" layoutY="182.0" onAction="#OnPass" style="-fx-background-color: EAC5EE; -fx-border-color: #48294b; -fx-background-radius: 5; -fx-border-radius: 5;" />
+      <TextField fx:id="userName" layoutX="236.0" layoutY="114.0" onAction="#onUserName" style="-fx-border-color: #48294b; -fx-background-color: EAC5EE; -fx-border-radius: 5; -fx-background-radius: 5;" />
+   </children>
+</AnchorPane>
